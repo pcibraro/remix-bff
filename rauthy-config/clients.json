@@ -1,0 +1,40 @@
+[
+  {
+    "id": "remix-app",
+    "name": "Remix Application",
+    "enabled": true,
+    "confidential": false,
+    "secret": null,
+    "redirect_uris": [
+      "http://localhost:5173/auth/callback",
+      "http://localhost:3000/auth/callback"
+    ],
+    "post_logout_redirect_uris": [
+      "http://localhost:5173",
+      "http://localhost:3000"
+    ],
+    "allowed_origins": [
+      "http://localhost:5173",
+      "http://localhost:3000"
+    ],
+    "flows_enabled": [
+      "authorization_code"
+    ],
+    "scopes": [
+      "openid",
+      "profile",
+      "email"
+    ],
+    "default_scopes": [
+      "openid",
+      "profile",
+      "email"
+    ],
+    "challenge": null,
+    "force_mfa": false,
+    "client_uri": "http://localhost:5173",
+    "contacts": [
+      "admin@localhost"
+    ]
+  }
+]

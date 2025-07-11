@@ -1,0 +1,1 @@
+base64 -i api_keys.json | tr -d '\n'

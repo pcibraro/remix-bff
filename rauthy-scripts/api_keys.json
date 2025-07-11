@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap",
+  "exp": 1835894400,
+  "access": [
+    {
+      "group": "Clients",
+      "access_rights": [
+        "read",
+        "create",
+        "update",
+        "delete"
+      ]
+    },
+    {
+      "group": "Secrets",
+      "access_rights": [
+        "read"
+      ]
+    }
+  ]
+}
