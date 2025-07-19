@@ -13,13 +13,14 @@ response=$(curl -sk -X POST https://localhost:8443/auth/v1/clients \
     "enabled": true,
     "confidential": true,
     "redirect_uris": [
-      "https://localhost:8443/auth/v1/oidc/callback"
+      "http://localhost:5173/oidc/callback"
     ],
     "flows_enabled": [
-      "authorization_code"
+      "authorization_code",
+      "client_credentials"
     ],
     "access_token_alg": "EdDSA",
-    "id_token_alg": "EdDSA",
+    "id_token_alg": "RS256",
     "auth_code_lifetime": 10,
     "access_token_lifetime": 10,
     "scopes": [
@@ -32,7 +33,7 @@ response=$(curl -sk -X POST https://localhost:8443/auth/v1/clients \
       "S256"
     ],
     "force_mfa": false,
-    "client_uri": "https://localhost:8443",
+    "client_uri": "http://localhost:5173/",
     "contacts": [
       "admin@localhost"
     ]

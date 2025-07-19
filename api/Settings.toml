@@ -1,0 +1,3 @@
+audience = "todo"
+issuer = "https://localhost:8443/auth/v1"
+jwks_url = "https://localhost:8443/auth/v1/oidc/certs"
